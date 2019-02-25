@@ -80,6 +80,7 @@ public class Deck {
      */
     public void shuffle() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+
     }
 
     /**
