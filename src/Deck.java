@@ -71,7 +71,8 @@ public class Deck {
         {
             count++;
         }
-        return count;
+        size = count;
+        return size;
     }
 
     /**
@@ -90,6 +91,16 @@ public class Deck {
      */
     public Card deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        int tempsize = size;
+        if (tempsize>0)
+        {
+            size--;
+            return cards.get(tempsize);
+        }
+        else
+        {
+            return null;
+        }
     }
 
     /**
