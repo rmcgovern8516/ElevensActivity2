@@ -15,6 +15,7 @@ public class Deck {
      * cards contains all the cards in the deck.
      */
     private List<Card> cards;
+    private List<Card> shuffle;
 
     /**
      * size is the number of not-yet-dealt cards.
@@ -81,6 +82,15 @@ public class Deck {
      */
     public void shuffle() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+        for (int i=0; i<52; i++)
+        {
+            shuffle.add(null);
+        }
+        int k = 0;
+        for (int j=0; j<25; j++)
+        {
+
+        }
 
     }
 
