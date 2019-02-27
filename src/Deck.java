@@ -82,16 +82,29 @@ public class Deck {
      */
     public void shuffle() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
-        for (int i=0; i<52; i++)
+        for (int i=0; i<52; i++)  //Clears shuffle deck
+        {
+            shuffle.remove(i);
+        }
+        for (int i=0; i<52; i++) //Adds 52 empty slots to shuffle deck
         {
             shuffle.add(null);
         }
         int k = 0;
         for (int j=0; j<25; j++)
         {
-
+            shuffle.remove(j);
+            shuffle.add(j, cards.get(k));
+            k = k+2;
         }
-
+        k=1;
+        for (int j=25; j<52; j++)
+        {
+            shuffle.remove(j);
+            shuffle.add(j, cards.get(k));
+            k = k+2;
+        }
+        cards = shuffle;
     }
 
     /**
